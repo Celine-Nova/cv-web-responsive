@@ -1,0 +1,526 @@
+/* jimporte les polices */
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+/* j'initialise les marges du cdocument je n'ai pas inserer de fichier rest.css */
+html{
+    padding: 0;
+    margin: 0;
+  
+}
+
+body{
+    border: solid black;
+    padding: 0 45px;  
+    
+}
+
+/* main{
+    padding-right: 20px;
+} */
+i.fa-bars, #menu-mobile{
+    display: none;
+}
+nav{
+background-color: #4fbcb5;
+height: 60px;
+
+
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0px;
+    margin: 0;
+    padding: 0 5px;
+    position: relative;
+    top: 25%;
+}
+
+nav li{
+    list-style: none;
+}
+
+nav a{
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* j'agrandi la taille de police au survole des a de la nav */
+nav li:hover {
+    transform: scale(1.25);
+    background-color: RGBa(220, 220, 220, 0.15);
+}
+
+#profil {
+    /* photo en fond */
+    background: url('../images/coding-computer.jpg');
+    height: 200px;
+    width: 100%;
+}
+
+#img-profil {
+    height: 250px;
+    width: 275px;
+    position: absolute; 
+    top: 18%;
+    left: 43%; 
+    opacity: 1;
+    /* j'arrondis les angles de ma photo de profil */
+    border-radius: 50%;
+    border: solid 6px white;
+}
+
+h1{
+    font-family: 'Courgette', cursive;
+    font-size: 44px;
+    margin-top: 180px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: rgb(95, 80, 228);
+    text-align: center;
+    /* Animations */
+    -webkit-animation-name: h1;
+    animation-name: h1;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+@keyframes h1 {
+    from {
+        font-size: 12px;
+    }
+    to {
+        font-size: 44px;
+    }
+}
+
+#hidden{
+    font-family: 'Courgette', cursive;
+    color: red;
+    font-size: 44px;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 50px 0;
+    padding: 0;
+    -webkit-animation-name: hidden;
+    animation-name: hidden;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+ @keyframes hidden {
+    from {
+      /* transparent */
+        opacity: 0;
+    }
+    80%{
+        
+       opacity: 0;
+    }
+    to {
+      /* opaque */
+        opacity: 1;
+    }
+  }
+
+#presentation{
+    display: flex;
+    justify-content: center;
+}
+
+#presentation{
+    display: block;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.2em;
+    border: solid rgb(144, 146, 144);
+    background-color: rgb(241, 241, 241);
+    padding: 4px 10px;
+    margin-bottom: 50px;
+}
+/* je mets les puces plus l'interieur */
+ul{
+    list-style: inside;
+}
+
+h2{
+    /* je mets en lettres CAPITALES */
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: cursive, "Comic Sans MS ";
+    text-align: center;
+    /* margin: 70px; */
+}
+
+section{
+    align-items: center;
+}
+
+#container-capacity{
+    /* height: 600px; */
+    display: flex;
+    justify-content: space-around;
+    margin: 80px auto;
+}
+
+#title-aptitude{
+    display: block;
+    background-color: greenyellow;
+    line-height: 1.7;  
+    font-size: 1.7em;;
+    padding: 8px 50px 10px 50px;
+    text-align: center;  
+}
+
+#aptitude{
+    border: solid rgb(144, 146, 144);
+    /* height: 30;  */
+    background-color: rgb(241, 241, 241);
+    align-self: center;
+}
+
+/* j'enlève le style les points des li */
+#list-hyphen{
+    list-style: none;
+    padding-left: 25px;
+}
+
+/* je remplace les points par des tirets */
+#list-hyphen li::before{
+    content: "- ";
+}
+
+#list-hyphen li {
+    margin: 2%;
+    font-size: 1.2em;
+}
+
+#img-logo{
+    align-self: center;
+    width: 75%;
+}
+
+#img-logo div{
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+/* j'annonce le nom et la durée de l'animation */
+#img-logo>div>img{
+    animation-name: trans;
+    animation-duration: 45s;
+    height: 30%;
+    width: 5%;
+}
+
+/* je créée une animation de rotation sur mes logos */
+@keyframes trans {
+    to {
+      transform: rotateY(360deg) rotateZ(360deg) rotateX(720deg);
+    }
+  }
+
+h3{
+    text-transform: uppercase;
+    font-size: 36px;
+    background-color: #30c4c9;
+    color: white;
+    border: solid 6px #357974;
+    width: 50%;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+h4{
+    font-size: 22px;
+    background-color: #9ac7e4;
+    line-height: 2.7;
+    padding-left: 15px;
+}
+
+.no-margin{
+    margin-top: 0;
+}
+
+.description-category{
+    margin-left: 5%;   
+}
+
+.all-margin{
+    width: 75%;
+    padding-right: 20px;
+    font-size: 1.1em;
+    position: relative;
+    left: 10%;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#formation>em {
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+
+th{
+    text-transform: uppercase;
+    font-size: 36px;
+    background-color: #30c4c9;
+    color: white;
+    border: solid 6px #357974;
+    width: 25%;
+    text-align: center;
+    line-height: 1.4;
+}
+/* je colle les marges du tableaux */
+.collapse{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+
+td{
+    padding: 6px 0 6px 15px;
+    border-left: solid 6px rgb(126, 124, 124);
+    border-bottom: solid 6px rgb(126, 124, 124);   
+}
+
+.collapse :last-child{
+    border-right: solid 6px rgb(126, 124, 124); 
+}
+
+figure{
+    width: 25%;
+}
+.img-project{
+border: solid 2px black;
+
+height: 200px;
+width: 100%;
+}
+
+.img-project:hover{
+    transform: scale(1.1);
+}
+
+.title-project{
+    font-size: 24px;
+    text-align: center;   
+}
+
+#description-project {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 3em;
+    font-family: cursive, "Comic Sans MS ";
+    text-align: center;
+}
+#contact{
+    display: flex;
+    justify-content: space-around;
+}
+
+#title-contact{
+    font-size: 28px;
+    font-family: 'Courgette', cursive;
+    border-top: dashed 6px rgb(241, 241, 241);
+    padding-top: 20px;
+}
+
+.fa-linkedin{
+    font-size: 50px;
+    color: blue;
+    transform: scale(1.1);
+    text-align: center;    
+}
+
+#link{
+    align-self: center;
+}
+#copyright{
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#menu-mobile{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    width:46px;
+    height:46px;
+   
+}
+
+/* si la checkbox est cochée j'affiche le menu */
+nav input[type=checkbox]:checked ~ ul{
+    font-size: 16px;
+    display: block;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    #img-profil{
+        height: 15%;
+        width: 26%;
+        position: absolute; 
+        top: 26%;
+        left: 39%;
+        z-index: 1;
+   }
+
+    h2{
+    font-size: 32px;
+    }
+
+    h3{
+        font-size: 22px;
+    } 
+
+    h4, th{
+        font-size: 18px;
+    }
+
+    #aptitude{
+        font-size: 0.7em;
+    }
+
+}
+@media screen and (max-width: 850px) {
+    i.fa-bars{
+       display: block;
+       font-size: 30px;
+       color: rgb(59, 17, 158);
+       position: absolute;
+       top: 1%;
+       right: 5%;
+   }
+   
+   body{
+       margin: 0;
+       padding: 0;
+   }
+   /* j'affiche la checkbox mais je la cache */
+   #menu-mobile{
+       display: block;
+       opacity: 0;
+   }
+
+   nav ul{
+       display: none;
+   }
+   
+   nav{
+      height: 70px;
+      padding-top: 0;
+   }
+
+   nav>ul{
+       
+        position: absolute;
+        top: 8%;
+        padding: 0;
+        margin: 0;
+        background-color: #4fbcb5;
+        width: 100%;
+        /* je positionne le ul au dessus de la photo de profil à 'louverture de celui-ci */
+        z-index: 2;
+    }
+
+    nav ul li{
+        text-align: center;
+        height: 40px;
+        width: 100%;
+    }
+
+    nav ul li a{
+        font-size: 22px;
+        margin-bottom: 5px;
+      
+   } 
+    h1{
+            margin-top: 100px;
+            font-size: 34px; 
+    }
+    
+    @keyframes h1 {
+        from {
+            font-size: 12px;
+        }
+        to {
+            font-size: 34px;
+        }
+    }
+}
+@media screen and (max-width: 620px) {
+    #container-capacity{
+        display:block;
+        margin-top: 0;
+        
+    }
+
+    #list-hyphen li{
+        margin-left: 15%;
+        font-size: 1.5em;
+    }
+
+    #img-logo{
+        width: 100%;
+        margin-top: 70px;
+    }
+
+    #description-project{
+        display: block;
+        padding: 0;
+    }
+
+    #description-project figure{
+        margin: 0 auto;
+         width: 80%;
+    }
+}   
+ @media screen and (max-width: 470px) {
+    h3{
+        font-size: 14px;
+    }
+
+    h4{
+        
+        font-size: 14px;
+    }
+
+    .description-category{
+        display: block;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .collapse tr th:nth-child(2), 
+    .collapse tr th:nth-child(3){
+        display: none;
+       
+    }
+
+    .collapse tr td:nth-child(2), 
+    .collapse tr td:nth-child(3){
+        display: none;
+    }
+
+   .all-margin ul {
+       margin-left: 0;
+       padding-left: 0;
+    
+   }
+} 
+          

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Favicon petite image de la fenetre-->
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"> 
+    <!-- liens CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- lien police css -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- lien icônes -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- lien boostrap -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+    <title>CV Web</title>
+</head>
+<body>
+    <header>
+        <!--en tete-->  
+        <!--Barre de navigation lien interne au site -->
+        <nav>
+            <i class="fas fa-bars"></i>
+            <input type="checkbox" id="menu-mobile" role="button">
+                <ul>
+                    <li> <a href="#">Accueil</a></li>
+                    <li><a href="#capacity">Compétences</a></li>
+                    <li><a href="#formation">Formations</a></li>
+                    <li><a href="#xp-pro">Experiences Professionnelles</a></li>
+                    <li><a href="#certificate">Diplômes</a></li>
+                    <li><a href="#project">Projets</a>   </li>         
+                    <li><a href="#contact">Contact</a> </li>
+                </ul>
+            
+            </nav>
+            <div id="profil">
+            </div>
+        
+                <img id="img-profil" src="../images/profilage.jpg" alt="Profil">
+            
+            
+            <!--Je peux mettre des Majuscules dans le HTML ainsi que dans le CSS-->
+            <h1>Céline Developpeuse Web Junior  </h1>
+            <span id="hidden">Fullstack </span>
+            
+            <div id="presentation">
+                    <strong>Présentation</strong>
+                    <p> Passionnée dans le domaine informatique. Je suis curieuse, motivée et ai soif d'apprendre. De nature calme, je m'adapte à toutes les situtations.</p>
+                    <p>je me suis reconvertis dans le développement web. J'ai suivi une formation aussi riche qu'intensive avec l'organisme O'clock et sa pédagogie innovante. Une formation certifiante qui m'a permis d'acquerir rapidement les connaissances techniques requises au metier de développeur web</p>
+                    <p>Je recherche à présent à mettre mes nouvelles compétences au service d'une équipe.</p>
+            </div>
+    </header>
+   
+    <!--corps de page -->
+    <main>
+        <!--je mettrais la 1ere lettre en Majuscule avec le CSS -->
+        <h2 id="capacity">compétences</h2>
+        <section>
+            <div id="container-capacity">
+                <div id="aptitude">
+                    <!-- caractere gras -->
+                    <strong id="title-aptitude">Aptitudes Personnelles</strong>
+                    <ul id="list-hyphen">
+                        <li>Créativité, Habilité &amp; Minutie</li>
+                        <li>Curiosité d'esprit et professionalisme</li>
+                        <li>Capacité d'adaptation, d'innovation</li>
+                    </ul>
+                </div>
+                <!-- Pas besoin de mettre une classe à toutes les images voir selecteur CSS "#langage img" -->
+                <div  id="img-logo">
+                    <div>
+                        <img class="trans" src="../images/html.jpg" alt="Logo HTML et CSS">
+                        <img class="trans" src="../images/bootstrap.jpg" alt="Logo Bootstrap">
+                    </div>
+                    <div>
+                        <img src="../images/javascript.jpg" alt="Logo Javascript">
+                        <img src="../images/ajax.jpg" alt="Logo Ajax">
+                        <img src="../images/jquery.jpg" alt="Logo jQuery ">
+                    </div>
+                    <div>
+                        <img src="../images/wamp.jpg" alt="Logo WAMP">
+                        <img src="../images/php.jpg" alt="Logo PHP">
+                        <img src="../images/mysql.jpg" alt="Logo MySql">
+                    </div>
+                    <div>
+                        <img src="../images/laravel.jpg" alt="Logo Laravel">
+                        <img src="../images/symfony.jpg" alt="Logo Symfony">
+                        <img src="../images/wordpress.jpg" alt="Logo Wordpress">
+                    </div>
+                    <div>
+                        <img src="../images/github.jpg" alt="Logo Github">
+                    </div>
+                </div>
+            </div>
+            </section>
+            <!--j'aurais pu aussi faire une présentation en forme de tableau !!! -->
+        <div id="formation">
+            <h3 class="description-title">formations</h3>
+                <h4 class="no-margin">Octobre 2018 - Avril 2019 <span class="description-category">Développeuse Fullstack Web/Mobile</span></h4>
+                    <p class="all-margin"> 5 mois, soit 700 heures intensives de formation au web developpement en téléprésentiel</p> <br>
+                    <p class="all-margin bold">&#x27A7; 3 mois de socle pour apprendre les bases du developpement web</p>
+                        <!--Liste à puces -->
+                        <ul class="all-margin">
+                            <li>HTML / CSS / Bootstrap</li>
+                            <li>Javascript (Vanilla) / jQuery / Ajax</li>
+                            <li>PHP-5-7 / MySQL / PHPMyAdmin / Modèle MVC / Altorouter / Laravel</li>
+                            <li>Linux / Git / Github</li>
+                        </ul>
+                    <p class="all-margin bold">&#x27A7; 1 mois de spécialisation Symfony</p>
+                    <p class="all-margin bold">&#x27A7; 1 mois de projet en groupe : 1 équipe composée de 2 react et 2 symfony</strong> </p>
+                        <p class="all-margin">Titre du projet : " Choisir mes plantes "</p>
+                        
+                        <!-- caractère Italique -->
+                            <em class="all-margin">Objectif(s) : </em>
+                                <ul class="all-margin">
+                                    <li>Réaliser un système de recherche qui permette de selectionner les plantes / végétaux selon les régions.</li>
+                                </ul>
+                            <em class="all-margin">Fonctionnalitées</em>
+                                <ul class="all-margin">
+                                    <li>Barre de recherche accueil : Toggle régions / végétaux</li>
+                                    <li>Liste des plantes : pouvoir afficher la liste des végétaux disponibles.</li>
+                                    <li>Index de température : Indique une température pour le développement du végétal recherché.</li>
+                                    <li>Carte : Affiche géographiquement la recherche associée</li>
+                                    <li>Plateforme communautaire : Possibilité de créer un profil personnel et de consulter ses informations personnelles & créer / modifier / supprimer son jardin personne</li>
+                                </ul>
+                            <em class="all-margin">Réalisation(s):</em>
+                                <p class="all-margin">En équipe : </p>
+                                    <ul class="all-margin">
+                                        <li>Rédaction du cahier des charges, assignation , user stories</li>
+                                        <li>MCD, MPD et wireframes</li>
+                                    </ul>
+                                <p class="all-margin">Symfony, coté back : </p>
+                                    <ul class="all-margin">
+                                        <li>Fixtures avec Alice Bundle</li>
+                                        <li>Creation API pour REACT avec Api-Platform</li>
+                                        <li>Ajout de filtre sur les requetes Api-Platform</li>
+                                        <li>API customisée en JSON pour REACT</li>
+                                        <li>Formulaire d'inscription et de connexion</li>
+                                        <li>Authentification</li>
+                                        <li>Ajout page profile</li>
+                                        <li>Ajout de "voters" </li>
+                                        <li>Interface administrateur avec EasyAdmin</li>
+                                    </ul>
+                <h4 id="self">2018 <span class="description-category"> Développeuse web Autoformation</span></h4>
+                    <strong class="all-margin">Openclassroom :</strong>
+                        <ul class="all-margin">
+                            <li>Comprendre le web : certificat de reussite du 28 Avril 2018</li>
+                            <li>HTML5 CSS3 : certificat de réussite du 3 Mai 2018</li>
+                            <li>Concevez votre site web avec PHP et MySQL</li>
+                            <li>Apprenez à coder avec JavaScript</li>
+                        </ul>
+                    <strong class="all-margin"> Tutoriel de Pierre Giraud :</strong>
+                
+                        <ul class="all-margin">
+                            <li>HTML5, CSS3 et PHP</li>
+                        </ul>
+                    <strong class="all-margin">Code academy : </strong>
+                        <ul class="all-margin">
+                            <li>Apprendre la ligne de commande</li>
+                        </ul>
+                    <strong class="all-margin">Code combat : </strong>
+                        <ul class="all-margin">
+                            <li>Jeu de codage JS et Python</li>
+                        </ul>
+                    <strong class="all-margin">SoloLearn sur Mobile</strong>
+                        <ul class="all-margin">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>PHP</li>
+                            <li>SQL</li>
+                            <li>JS</li>
+                        </ul>      
+            </div>
+        <div id="xp-pro">
+            <h3>experiences professionnelles</h3>
+                <h4 class="no-margin">Juillet 2018 <span class="description-category">Développeuse Web Stage Immersion Professionnelle </span></h4>
+                    <strong class="all-margin">&#x27A7; Création et réalisation site intranet sous Wordpress </strong>
+                <h4>2018-2017 <span class="description-category">Jardinière Practiceman Golf </span></h4>
+                    <strong class="all-margin">&#x27A7; Entretiens espaces verts &amp; ramassage balles </strong>
+                <h4>2018-2010 <span class="description-category">Paysagiste </span></h4>
+                    <strong class="all-margin">&#x27A7; Réalisation &amp; entretiens espaces verts </strong>
+                <h4>2001-2009 <span class="description-category">Animatrice Commerciale</span></h4>
+                    <strong class="all-margin">&#x27A7; Animation en espace vente thématique </strong>
+                <h4>2009-2004 <span class="description-category">Bonnetière</span></h4>
+                    <strong class="all-margin">&#x27A7; Fabrication tissus, surveillance &amp; réparation métiers </strong>
+        </div>
+        <!-- je fais un tableau pour decrire mes loisirs, mes diplômes... -->
+        <table class="collapse">
+            <tr>
+                <th>diplômes</th>
+                <th>divers</th>
+                <th>loisirs</th>
+            </tr>
+            <tr>
+                <td >&#x27A7; BP Aménagement Paysager <br>
+                    &#x27A7; BEP Secrétariat
+                </td>
+                 <td >&#x27A7; Permis B + Véhicules <br>
+                    &#x27A7; CACES 1 (Mini-Pelle)</td>
+                <td >&#x27A7; Internet, jeux vidéo, Musique <br>
+                    &#x27A7; Promenade, Nature, Kayak
+                </td>              
+            </tr>  
+        </table>
+        <section>
+            <h2 id="project"> Mes Projets</h2>
+                <div id="description-project">
+                    <figure>
+                        <a href="https://github.com/Celine-Nova/SymfoBlog"  target="_blank"><img  class="img-project" src="../images/symfoblog.jpg" alt="Photo projet Symfoblog"></a>
+                        <figcaption class="title-project">SymfoBlog</figcaption>
+                    </figure>
+                    <figure>
+                            <a href="https://github.com/Celine-Nova/Fonctions-PHP"  target="_blank"><img  class="img-project" src="../images/fonction-php.jpg" alt="Photo fonctions php"></a>
+                            <figcaption class="title-project">Fonctions PHP</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="https://github.com/Celine-Nova/POO-PHP"  target="_blank"><img  class="img-project" src="../images/poo-php.jpg" alt="Photo POO PHP"></a>
+                            <figcaption class="title-project">POO PHP</figcaption>
+                    </figure>
+            </div>
+        </section>
+        
+    </main>
+    <!-- pied de page -->
+    <footer>
+        <h2 id="title-contact">Contact</h2>
+        <div id="contact">
+            <div id="test">
+                <p><i class="fas fa-mobile-alt contact"> 06 - 48 - 69 - 99 09</i> </p>
+                <p><i class="fas fa-at contact"> cdarras.co@orange.fr</i></p>
+                <p><i class="fas fa-map-marker contact"> 33770 Salles</i></p>                    
+            </div>    
+            <div id="link">
+                <a href="https://www.linkedin.com/in/celine-d-3b9292183/"> <i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <p id="copyright">Copyright  &#xa9; Céline.D</p>
+    </footer>
+   
+</body>
+</html>
