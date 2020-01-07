@@ -4,14 +4,12 @@
 /* j'initialise les marges du cdocument je n'ai pas inserer de fichier rest.css */
 html{
     padding: 0;
-    margin: 0;
-  
+    margin: 0; 
 }
 
 body{
     border: solid black;
     padding: 0 45px;  
-    
 }
 
 /* main{
@@ -20,12 +18,12 @@ body{
 i.fa-bars, #menu-mobile{
     display: none;
 }
+
 nav{
 background-color: #4fbcb5;
 height: 60px;
-
-
 }
+
 nav ul{
     display: flex;
     justify-content: space-around;
@@ -206,15 +204,15 @@ section{
 }
 
 /* j'annonce le nom et la durée de l'animation */
-#img-logo>div>img{
-    animation-name: trans;
+.trans{
+    animation-name: transs;
     animation-duration: 45s;
     height: 10%;
     width: 10%;
 }
 
 /* je créée une animation de rotation sur mes logos */
-@keyframes trans {
+@keyframes transs {
     to {
       transform: rotateY(360deg) rotateZ(360deg) rotateX(720deg);
     }
@@ -249,7 +247,7 @@ h4{
 
 .all-margin{
     width: 75%;
-    padding-right: 20px;
+    /* padding-right: 20px; */
     font-size: 1.1em;
     position: relative;
     left: 10%;
@@ -399,6 +397,10 @@ nav input[type=checkbox]:checked ~ ul{
 
 }
 @media screen and (max-width: 850px) {
+    html{
+        margin: 0;
+        padding: 0;
+    }
     i.fa-bars{
        display: block;
        font-size: 30px;
@@ -426,10 +428,10 @@ nav input[type=checkbox]:checked ~ ul{
    nav{
       height: 70px;
       padding-top: 0;
+      /* position: relative; */
    }
 
    nav>ul{
-       
         position: absolute;
         top: 8%;
         padding: 0;
@@ -439,6 +441,12 @@ nav input[type=checkbox]:checked ~ ul{
         /* je positionne le ul au dessus de la photo de profil à 'louverture de celui-ci */
         z-index: 2;
     }
+    /* Décalage entre navigateurs chrome et firefox je repositionne le ul dans firefox*/
+    nav>ul{
+        position: moz-absolute;
+        top: 5%;
+    }
+
 
     nav ul li{
         text-align: center;
@@ -472,6 +480,10 @@ nav input[type=checkbox]:checked ~ ul{
 }
 
 @media screen and (max-width: 620px) {
+    html{
+        margin: 0;
+        padding: 0;
+    }
     #container-capacity{
         display:block;
         margin-top: 0;
@@ -514,7 +526,12 @@ nav input[type=checkbox]:checked ~ ul{
 
     h4{
         
-        font-size: 14px;
+        font-size: 16px;
+    }
+
+    .size{
+        font-size: 0.8em;
+        margin-right: 4px;
     }
 
     .description-category{
@@ -551,6 +568,9 @@ nav input[type=checkbox]:checked ~ ul{
     position: relative;
     top: -65px;
     left: 38%;
+    }
+    h4 strong{
+        font-size: 12px;
     }
 } 
           
