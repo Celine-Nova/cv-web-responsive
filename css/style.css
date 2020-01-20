@@ -342,6 +342,14 @@ h2{
 #link{
     align-self: center;
 }
+
+#compteur{
+    border-top: dashed 6px rgb(241, 241, 241);
+    text-align: center;
+    padding-top: 2%;
+    margin-top: 2%;
+}
+
 #copyright{
     font-size: 1.2em;
     font-weight: bold;
