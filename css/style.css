@@ -63,7 +63,7 @@ nav li:hover {
     width: 275px;
     position: relative; 
     top: -135px;
-    left: 43%; 
+    left: 40%; 
     margin-bottom: 0;
     padding-bottom: 0;
     opacity: 1;
@@ -121,14 +121,42 @@ h1{
         opacity: 1;
     }
   }
-
-#presentation{
+#work-study-training{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    
 }
+#title-work-study-training{
+    color: blue;
+    font-size: 1.2em;
+    vertical-align: middle;
+    text-align: center;
+margin-top: 25px;}
+
+#pace{
+    color: whitesmoke;
+    font-weight: 100;
+    border: solid 3px blue;
+    background-color: #60aeba;
+    padding: 10px;
+    /* margin: 30px; */
+}
+#title-pace{
+    color: purple;
+    font-size: 12px;
+}
+#logo-school{
+    border: solid 3px blue;
+    padding: 10px;
+}
+/* #presentation{
+    display: flex;
+} */
 
 #presentation{
     display: block;
+    justify-content: center;
     font-family: 'Indie Flower', cursive;
     font-size: 1.2em;
     border: solid rgb(144, 146, 144);
