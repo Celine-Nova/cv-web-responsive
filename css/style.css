@@ -95,7 +95,7 @@ h1{
 
 #hidden{
     font-family: 'Courgette', cursive;
-    color: red;
+    color: #1000ff;
     font-size: 44px;
     display: flex;
     justify-content: center;
@@ -120,39 +120,74 @@ h1{
       /* opaque */
         opacity: 1;
     }
-  }
-#work-study-training{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 15px;
     
+  }
+  #work-study-training{
+      /* je positionne les blocks les uns à coté des autres */
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap; /* les blocks vont à la ligne quand il n'y a plus de place*/
+      margin-bottom: 15px;
+      
 }
+
 #title-work-study-training{
-    color: blue;
+    color: red;
     font-size: 1.2em;
-    vertical-align: middle;
     text-align: center;
-margin-top: 25px;}
+    margin-top: 25px;
+    padding-top: 45px;
+    animation-name: color;
+    animation-duration: 7s;
+    font-size: 26px;
+}
+    
+@keyframes color {
+    from {
+    color: #fff600;
+    font-size: 12px;
+    }
+    50%{
+        
+        color: #f98d27;
+    }
+    to {
+    
+        color: #ff0000;
+        font-size: 26px;
+    }
+
+}
 
 #pace{
-    color: whitesmoke;
-    font-weight: 100;
-    border: solid 3px blue;
-    background-color: #60aeba;
-    padding: 10px;
-    /* margin: 30px; */
+color: whitesmoke;
+font-weight: 100;
+border: solid 3px blue;
+background-color: #60aeba;
+padding: 10px;
+margin-bottom: 5px;
 }
+
 #title-pace{
     color: purple;
     font-size: 12px;
 }
-#logo-school{
+
+#school{
     border: solid 3px blue;
-    padding: 10px;
+    padding: 10px 30px 5px 30px;
+    margin-bottom: 5px;
 }
-/* #presentation{
-    display: flex;
+
+/* #logo-school{
+    height: 20px;
+    width: 30px;
 } */
+
+#school :hover {
+    transform: scale(1.15);
+}
+
 
 #presentation{
     display: block;
@@ -233,14 +268,14 @@ section{
 
 /* j'annonce le nom et la durée de l'animation */
 .trans{
-    animation-name: transs;
+    animation-name: trans;
     animation-duration: 45s;
     height: 10%;
     width: 10%;
 }
 
 /* je créée une animation de rotation sur mes logos */
-@keyframes transs {
+@keyframes trans {
     to {
       transform: rotateY(360deg) rotateZ(360deg) rotateX(720deg);
     }
@@ -512,6 +547,14 @@ nav input[type=checkbox]:checked ~ ul{
         to {
             font-size: 34px;
         }
+    }
+}
+@media screen and (max-width: 649px) {
+    #hidden{
+        margin-bottom: 5px;
+    }
+    #title-work-study-training{
+        padding-top: 0;
     }
 }
 
